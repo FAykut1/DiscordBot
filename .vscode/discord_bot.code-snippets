@@ -1,0 +1,16 @@
+{
+	"Discord Bot Command": {
+		"prefix": "botcmd",
+		"body": [
+			"module.exports = { ",
+			"  name: \"$1\",",
+			"  description: \"$2\",",
+			"  aliases: [$3],",
+			"  cmd: (_client, _msg, _args) => {",
+			"    $4",
+			"  }",
+			"}"
+		],
+		"description": "Discord Bot Command"
+	}
+}

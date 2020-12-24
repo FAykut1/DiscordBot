@@ -19,7 +19,7 @@ client.on('ready', () => {
   console.log(`Bot calisiyor : ${client.user.tag}`);
 });
 
-client.on('message', msg => {
+client.on('message',  msg => {
   if(msg === null) return;
   if(msg.guild === null) return;
   if(msg.channel === null) return;
@@ -31,7 +31,7 @@ client.on('message', msg => {
   const args = content.substring(1,content.length).split(' ');
   
   client.commands.forEach(command => {
-    if(command.name === args[0]) command.cmd(client,msg,args);
+    if(command.name === args[0])  command.cmd(client,msg,args);
   });
 
 });
